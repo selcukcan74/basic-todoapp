@@ -1,0 +1,165 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #ece9e6, #ffffff);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 500px;
+  margin: 60px auto;
+  background: white;
+  padding: 25px 30px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+h1 i {
+  color: #4CAF50;
+  margin-right: 6px;
+}
+
+form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px 0 0 8px;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px 18px;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  font-size: 18px;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.filter {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#filtre {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+ul#gorevListesi {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: #f9f9f9;
+  padding: 14px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  transition: all 0.2s ease;
+}
+
+li:hover {
+  background: #f1f1f1;
+}
+
+li input[type="checkbox"] {
+  transform: scale(1.2);
+}
+
+.gorevMetni {
+  flex: 1;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.tamamlandi {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.tarih {
+  font-size: 11px;
+  color: #777;
+}
+
+li button {
+  background: transparent;
+  border: none;
+  color: #e74c3c;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+li button:hover {
+  color: #c0392b;
+}
+
+.editInput {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+}
+
+
+/* ... önceki stiller aynı şekilde kalsın ... */
+
+/* Hata mesajı */
+#errorMsg {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #f5c6cb;
+  border-radius: 6px;
+  display: none;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Fade-in animasyonu */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Görev ekleme/silme animasyonu */
+li {
+  transition: all 0.3s ease-in-out;
+}
+
+li.fade-out {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Form focus animasyonu */
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.4);
+  border-color: #4CAF50;
+}
