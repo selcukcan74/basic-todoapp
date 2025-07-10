@@ -4,6 +4,11 @@ Basit ve kullanışlı bir görev yönetim uygulaması. Kullanıcıların görev
 
 ---
 
+## Galeri
+<img width="auto" height="500" alt="image" src="https://github.com/user-attachments/assets/62d92182-b5fb-4c47-985a-c0cb7e00baad" />
+<img width="auto" height="500" alt="image" src="https://github.com/user-attachments/assets/96f0b3d7-f83c-42c6-a92f-5b843f77f9c7" />
+
+
 ## Özellikler
 
 - Görev ekleme ve silme
