@@ -17,7 +17,7 @@ Basit ve kullanışlı bir görev yönetim uygulaması. Kullanıcıların görev
 
 1. Depoyu klonla:  
    ```bash
-   git clone https://github.com/kullaniciAdi/todo-list.git
+   git clone https://github.com/selcukcan74/todo-list.git
 
 2. Proje dizinine gir:
    ```bash
